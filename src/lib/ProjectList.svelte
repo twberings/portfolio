@@ -12,7 +12,7 @@
   <div
     class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-gray-900 to-transparent z-10 pointer-events-none"
   ></div>
-  <div class="h-screen bg-gray-900 overflow-y-auto flex flex-col gap-5 p-10">
+  <div class="h-screen overflow-y-auto flex flex-col gap-5 p-10">
     <h1 class="mt-16 font-poppins text-4xl font-bold text-sky-50 underline">
       My Work:
     </h1>

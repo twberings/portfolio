@@ -31,11 +31,18 @@
     {
       title: "Wave function collapse",
       description:
-        "This is a my implementation of the wave function collapse algorithm. It is an adaptable random generation algorithm written in C++, that can be compiled to WebAssemble to run an a browser.",
+        "This is a my implementation of the wave function collapse algorithm. It is an adaptable random generation algorithm written in C++, that can be compiled to WebAssemble to run in a browser.",
       skills: ["C++", "OOP", "WebAssembly"],
-      code: "https://www.github.com",
+      code: "https://www.github.com/twberings/wfc",
       demo: "/demo/wfc",
     },
+    {
+      title: "Portfolio website",
+      description:
+        "The website you are currently viewing. It is a static site generated with SvelteKit and TailwindCSS.",
+      skills: ["Svelte", "TailwindCSS", "SvelteKit"],
+      code: "https://www.github.com/twberings/portfolio",
+    }
   ];
   let project = $state({});
 </script>

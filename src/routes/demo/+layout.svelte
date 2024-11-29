@@ -13,7 +13,7 @@
     viewBox="0 0 24 24"
   >
     <path
-      stroke="currentColor"
+      stroke="white"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
@@ -22,6 +22,4 @@
   </svg>
 </a>
 
-<div class="h-screen w-screen bg-gray-900">
-  {@render children()}
-</div>
+{@render children()}

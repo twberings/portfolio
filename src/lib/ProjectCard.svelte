@@ -12,7 +12,12 @@
   <p class="font-poppins text-gray-300">{project.description}</p>
   <div class="pt-1 flex gap-4">
     {#if project.code}
-      <a href={project.code} aria-label="code">
+      <a
+        href={project.code}
+        aria-label="code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           class="w-6 h-6 text-gray-800 dark:text-white"
           aria-hidden="true"
@@ -23,7 +28,7 @@
           viewBox="0 0 24 24"
         >
           <path
-            stroke="currentColor"
+            stroke="white"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
@@ -40,7 +45,7 @@
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
-          fill="currentColor"
+          fill="white"
           viewBox="0 0 24 24"
         >
           <path
