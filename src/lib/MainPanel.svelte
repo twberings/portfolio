@@ -8,7 +8,7 @@
 
   <p class="font-poppins text-gray-300 mb-4">
     I'm a software developer with a passion for writing quality code and making
-    cool stuff. I have mostly have experience with C++ and I'm teaching myself
+    cool stuff. I mostly have experience with C++ and I'm teaching myself
     Rust. However, I'm always eager to learn new things when necessary. For
     example, I'm currently learning Svelte by building this website. I enjoy
     working on low level code and embedded programming the most.
