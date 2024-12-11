@@ -1,8 +1,8 @@
 <script>
-  import SidePanel from "$lib/SidePanel.svelte";
-  import MainPanel from "$lib/MainPanel.svelte";
-  import ProjectCard from "$lib/ProjectCard.svelte";
-  import ProjectList from "$lib/ProjectList.svelte";
+  import MainPanel from "$lib/Components/MainPanel.svelte";
+  import ProjectCard from "$lib/Components/ProjectCard.svelte";
+  import ProjectList from "$lib/Components/ProjectList.svelte";
+  import InfoPanel from "$lib/Components/InfoPanel.svelte";
 
   const skills = [
     {
@@ -42,11 +42,12 @@
         "The website you are currently viewing. It is a static site generated with SvelteKit and TailwindCSS.",
       skills: ["Svelte", "TailwindCSS", "SvelteKit"],
       code: "https://www.github.com/twberings/portfolio",
-    }
+    },
   ];
   let project = $state({});
 </script>
 
+<InfoPanel {skills} />
 <div class="flex">
   <MainPanel>
     {#snippet projectHighlight()}
@@ -55,6 +56,5 @@
       {/if}
     {/snippet}
   </MainPanel>
-  <SidePanel {skills} />
   <ProjectList {projects} bind:currentProject={project} />
 </div>

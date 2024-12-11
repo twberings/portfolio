@@ -1,6 +1,6 @@
 <script>
   import { fly } from "svelte/transition";
-  import { load } from "./LoadTransition";
+  import { load } from "../Utils/LoadTransition";
   let { progress, text, color } = $props();
   let radius = $state(10);
   let circumference = $derived(2 * Math.PI * radius);
@@ -29,7 +29,7 @@
       in:load|global={{ delay: 600 }}
     />
   </svg>
-  <p class="font-poppins text-2xl text-sky-50 font-semibold overflow-hidden" in:fly|global={{ delay: 600, x: -15 }}>{text}</p>
+  <p class="font-poppins text-2xl text-sky-50 font-semibold overflow-hidden" in:fly|global={{ x: -15 }}>{text}</p>
 </div>
 
 <style>
