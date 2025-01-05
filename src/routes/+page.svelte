@@ -4,27 +4,58 @@
   import ProjectList from "$lib/Components/ProjectList.svelte";
   import InfoPanel from "$lib/Components/InfoPanel.svelte";
 
-  const skills = [
+  const skills = {
+    languages: [
+      {
+        progress: 0.9,
+        text: "C++",
+        color: "#0984CF",
+      },
+      {
+        progress: 0.9,
+        text: "C",
+        color: "#080808",
+      },
+      {
+        progress: 0.5,
+        text: "Rust",
+        color: "#DEA584",
+      },
+      {
+        progress: 0.15,
+        text: "Svelte",
+        color: "#FF3E00",
+      },
+      {
+        progress: 0.15,
+        text: "JavaScript/TypeScript",
+        color: "#F7E025",
+      },
+    ],
+    others: [
+      {
+        progress: 0.65,
+        text: "Object Oriented Programming",
+        color: "#9057FF",
+      },
+      {
+        progress: 0.8,
+        text: "Embedded Programming",
+        color: "#209BA1",
+      },
+      {
+        progress: 0.5,
+        text: "Test Driven Development",
+        color: "#AB5F02",
+      },
+    ],
+  };
+  const experiences = [
     {
-      progress: 0.9,
-      text: "C++",
-      color: "#0984CF",
-    },
-
-    {
-      progress: 0.5,
-      text: "Rust",
-      color: "#DEA584",
-    },
-    {
-      progress: 0.8,
-      text: "Arduino framework",
-      color: "#209BA1",
-    },
-    {
-      progress: 0.15,
-      text: "Svelte",
-      color: "#FF3E00",
+      title: "Fontys University of Applied Sciences",
+      description:
+        "I am currently studying Computer Science at Fontys University of Applied Sciences.",
+      image: "/images/fontys.png",
     },
   ];
   const projects = [
@@ -47,7 +78,7 @@
   let project = $state({});
 </script>
 
-<InfoPanel {skills} />
+<InfoPanel {skills} {experiences} />
 <div class="flex">
   <MainPanel>
     {#snippet projectHighlight()}
