@@ -32,7 +32,7 @@
       {:else}
         <button
           class="h-fit p-10 bg-gray-800 rounded-xl"
-          onclick={(currentProject = project)}
+          onclick={() => (currentProject = project)}
         >
           <h1 class="font-poppins text-white font-semibold text-2xl">
             {project.title}
