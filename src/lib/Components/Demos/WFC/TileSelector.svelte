@@ -16,7 +16,10 @@
     {#each selected.images as image}
       <button onclick={onclick(selected.x, selected.y, image)}>
         <img
-          src={"/demo/wfc/tilesets/test/" + image + ".bmp"}
+          src={"/demo/wfc/tilesets/traffic_lights/" + image + ".bmp"}
+          style="image-rendering: pixelated;
+                 image-rendering: -moz-crisp-edges;
+                 image-rendering: crisp-edges;"
           alt="Tile"
           class="w-12 h-12"
         />

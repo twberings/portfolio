@@ -8,7 +8,7 @@
 
   onMount(async () => {
     Module = await initModule();
-    const map = Module.createImage(4, 4, 1);
+    const map = Module.createImage(6, 6, Math.floor(Math.random() * 1000000));
     grid = JSON.parse(map);
   });
 
@@ -29,7 +29,7 @@
   };
 
   let reset = () => {
-    const map = Module.reset(4, 4, 1);
+    const map = Module.reset(6, 6, Math.floor(Math.random() * 1000000));
     grid = JSON.parse(map);
     finishing = false;
   };

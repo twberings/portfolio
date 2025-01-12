@@ -20,7 +20,7 @@
 
 <div class="p-5 rounded-xl bg-gray-700">
   {#each grid as row, y}
-    <div class="grid grid-cols-4">
+    <div class="grid grid-cols-6">
       {#each row as cell, x}
         <Tile images={cell} {x} {y} {finishing} bind:selected />
       {/each}

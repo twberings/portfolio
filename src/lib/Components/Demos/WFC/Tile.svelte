@@ -7,7 +7,7 @@
   {#if !finishing}
     {#if selected != null && selected.images === images}
       <button
-        class="w-12 h-12 font-poppins font-bold bg-gray-600 border-2 border-blue-600 text-center content-center text-white text-xl"
+        class="w-28 h-28 font-poppins font-bold bg-gray-600 border-2 border-blue-600 text-center content-center text-white text-xl"
         aria-hidden="true"
         onclick={() => {
           selected = null;
@@ -17,7 +17,7 @@
       </button>
     {:else}
       <button
-        class="w-12 h-12 font-poppins font-bold text-center text-xl content-center bg-gray-800 text-white hover:bg-gray-700"
+        class="w-28 h-28 font-poppins font-bold text-center text-xl content-center bg-gray-800 text-white hover:bg-gray-700"
         aria-hidden="true"
         onclick={() => {
           selected = { images, x, y };
@@ -35,9 +35,12 @@
   {/if}
 {:else if images.length === 1}
   <img
-    src={"/demo/wfc/tilesets/test/" + images[0] + ".bmp"}
+    src={"/demo/wfc/tilesets/traffic_lights/" + images[0] + ".bmp"}
     alt="Tile"
-    class="w-12 h-12"
+    style="image-rendering: pixelated;
+           image-rendering: -moz-crisp-edges;
+           image-rendering: crisp-edges;"
+    class="w-28 h-28"
     in:scale={{ duration: 500 }}
   />
 {/if}
